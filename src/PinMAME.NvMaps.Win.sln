@@ -13,13 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinMAME.NvMaps.Win.Base", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solution Items", "{509A9EB2-10C4-42BF-A1AA-09054EFA6D13}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\.github\workflows\dotnet.yml = ..\..\.github\workflows\dotnet.yml
-		ReadMe.md = ReadMe.md
+		..\.github\workflows\dotnet.yml = ..\.github\workflows\dotnet.yml
+		..\ReadMe.md = ..\ReadMe.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NvParser", "NvParser", "{F97E774B-BD3B-4188-98CD-C47C6224C0D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinMAME.NvMaps", "..\..\pinmame-nvram-maps-dotnet\src\PinMAME.NvMaps\PinMAME.NvMaps.csproj", "{F893FCB8-407B-408D-B142-3B47F2BBA6A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinMAME.NvMaps", "..\submodules\pinmame-nvram-maps-dotnet\src\PinMAME.NvMaps\PinMAME.NvMaps.csproj", "{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,21 +53,21 @@ Global
 		{421F17A5-FA50-412F-9499-609567DCD769}.Release|Any CPU.Build.0 = Release|Any CPU
 		{421F17A5-FA50-412F-9499-609567DCD769}.Release|x64.ActiveCfg = Release|x64
 		{421F17A5-FA50-412F-9499-609567DCD769}.Release|x64.Build.0 = Release|x64
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|x64.Build.0 = Debug|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|x64.ActiveCfg = Release|Any CPU
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|x64.Build.0 = Release|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5D0EF184-B1F2-4474-9E00-00E47F189C55} = {694C29C5-C269-4339-8E06-002A52091133}
-		{F893FCB8-407B-408D-B142-3B47F2BBA6A8} = {F97E774B-BD3B-4188-98CD-C47C6224C0D2}
+		{ED7EF635-7CCF-475B-BB85-05E0E27E1F1B} = {F97E774B-BD3B-4188-98CD-C47C6224C0D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CEDA065-B14D-49A4-B23F-106E32FFC63B}

@@ -84,8 +84,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\pinmame-nvram-maps-dotnet\src\PinMAME.NvMaps\PinMAME.NvMaps.csproj">
-      <Project>{f893fcb8-407b-408d-b142-3b47f2bba6a8}</Project>
+    <ProjectReference Include="..\..\submodules\pinmame-nvram-maps-dotnet\src\PinMAME.NvMaps\PinMAME.NvMaps.csproj">
+      <Project>{ed7ef635-7ccf-475b-bb85-05e0e27e1f1b}</Project>
       <Name>PinMAME.NvMaps</Name>
     </ProjectReference>
   </ItemGroup>
