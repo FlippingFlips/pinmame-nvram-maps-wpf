@@ -1,0 +1,3 @@
+[submodule "submodules/pinmame-nvram-maps-dotnet"]
+	path = submodules/pinmame-nvram-maps-dotnet
+	url = https://github.com/FlippingFlips/pinmame-nvram-maps-dotnet
