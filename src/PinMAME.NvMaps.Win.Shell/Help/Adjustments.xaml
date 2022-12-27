@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="PinMAME.NvMaps.Win.Shell.Help.Adjustments"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PinMAME.NvMaps.Win.Shell.Help"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Margin="20">
+    <Grid>
+        <StackPanel Margin="10" >
+            <TextBlock FontSize="12" TextWrapping="WrapWithOverflow">
+                    <TextBlock Text="Adjustment / Audit Search" Foreground="YellowGreen"/>
+                    <LineBreak/>
+                    <TextBlock Text="1. Load a pinmame rom and then exit to get your first nv file in the nvram directory."/>
+                    <LineBreak/>
+                    <TextBlock Text="2. Make a copy of it. Windows will auto create the name &quot;romname - Copy.nv&quot; if you copy &amp; paste it in the same dir."/>
+                    <LineBreak/>
+                    <TextBlock Text="3. Load the rom again and make a change to the first item in menu. Balls per game for instance."/>
+                    <LineBreak/>
+                    <TextBlock Text="4. Make note of value, if it's balls per game change it to 10 balls from 3 (0A)"/>
+                    <LineBreak/>
+                    <TextBlock Text="5. Exit the rom which saves a new .nv"/>
+                    <LineBreak/>
+                    <TextBlock Text="6. Run the built in windows command to diff the binaries."/>
+                    <TextBlock Foreground="Red">fc /b romname.nv &quot;romname - Copy.nv&quot;</TextBlock>
+                    <LineBreak/>
+                    <TextBlock Text="7. This will print comparison vales with their adress in the console and the values should be towards the end."/>
+                    <LineBreak/>
+                    <TextBlock Text="8. For example you may see `00001BFE 0A 30` changing from 3 to 10"/>
+                    <LineBreak/>
+                    <TextBlock Text="9. Load the ram in a hex editor and look at the address (Ctrl+G), you should see where to start"/>
+                    <LineBreak/>
+                    <TextBlock Text="8. For example you may see `00001BFE 0A 30` changing from 3 to 10"/>                  
+                    <LineBreak/>
+                    <TextBlock Text="9. Start an address before that to include a 2 length 00 0A. `00001BFD`"/>
+                    <LineBreak/>
+                    <TextBlock Text="10. Change the next item in the rom menu, exit the rom and look at change to check if in the right place"/>      
+                    <LineBreak/><LineBreak/><LineBreak/>
+                    <TextBlock Text="Using the Mapping Helper to create adjustment tables" Foreground="YellowGreen"/>
+                    <LineBreak/>
+                    <TextBlock Text="1. Go into the games 1st adjustment menu and get the count of items"/>      
+                    <LineBreak/>
+                    <TextBlock Text="2. Create Menu: Add the name of the adjustment menu, items count and your starting offset you found."/>
+                    <LineBreak/>
+                    <TextBlock Text="3. Click New Menu to auto generate a tab and items"/>                      
+                    <LineBreak/>
+                    <TextBlock Text="4. Cycle through the items in the rom and enter the label names in the rows, set the encode type, length and default."/>
+                    <LineBreak/>
+                    <TextBlock Text="5. You don't need to set lengths for enums, save mapping along the way"/>
+                    <LineBreak/>
+                    <TextBlock Text="6. Generate mapping and preview output along the way checking as you go"/>
+                    </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

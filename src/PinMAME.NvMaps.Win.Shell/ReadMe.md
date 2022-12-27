@@ -3,6 +3,8 @@
 
 Finding the scores and writing mapping files can be a laborious task, this aims to take some of the pain away.
 
+Dev Note: To view XAML correctly while developing then add to `FodyWeavers.xml` <Costura DisableCleanup="true"  />	. Remove this option when wanting to weave assemblies.
+
 ## Quick Guide
 ---
 
@@ -52,18 +54,3 @@ You can preview your output and check your search results selections are good, a
 Saves the nvram, the json mapping and app state. So next time you drop your memory in it will keep all the input given.
 
 * Ripleys demo included
-
-![](/screens/screen_wpf_a.jpg)
-
-![](/screens/screen_wpf_b.jpg)
-
-![](/screens/screen_wpf_c.jpg)
-
-![](/screens/screen_wpf_d.jpg)
-
-![](/screens/screen_wpf_e.jpg)
-
-### Building this repository
----
-
-- get submodules with `git submodule foreach git pull origin main`

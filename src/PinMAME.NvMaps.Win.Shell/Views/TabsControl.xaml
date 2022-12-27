@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="PinMAME.NvMaps.Win.Shell.Views.TabsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PinMAME.NvMaps.Win.Shell.Views"
+             mc:Ignorable="d" 
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"                
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid VerticalAlignment="Stretch">
+        <mah:MetroTabControl mah:HeaderedControlHelper.HeaderFontSize="16">
+
+            <mah:MetroTabItem Header="Last Game">
+                <ContentControl prism:RegionManager.RegionName="LatestScoresRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="High Scores">
+                <ContentControl prism:RegionManager.RegionName="HighScoresRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Mode Champs">
+                <ContentControl prism:RegionManager.RegionName="ModeChampionsRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Adjustments">
+                <ContentControl prism:RegionManager.RegionName="AdjustmentsRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Audits">
+                <ContentControl prism:RegionManager.RegionName="AuditsRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Mapping">
+                <ContentControl prism:RegionManager.RegionName="MappingRegion" VerticalAlignment="Top"/>
+            </mah:MetroTabItem>
+
+        </mah:MetroTabControl>
+    </Grid>
+</UserControl>

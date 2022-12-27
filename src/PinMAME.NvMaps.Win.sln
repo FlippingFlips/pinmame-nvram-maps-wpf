@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinMAME.NvMaps.Win.Shell", "PinMAME.NvMaps.Win.Shell\PinMAME.NvMaps.Win.Shell.csproj", "{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{694C29C5-C269-4339-8E06-002A52091133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinMAME.NvMaps.Win.Module", "Modules\PinMAME.NvMaps.Win.Module\PinMAME.NvMaps.Win.Module.csproj", "{5D0EF184-B1F2-4474-9E00-00E47F189C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinMAME.NvMaps.Win.Base", "PinMAME.NvMaps.Win.Base\PinMAME.NvMaps.Win.Base.csproj", "{421F17A5-FA50-412F-9499-609567DCD769}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solution Items", "{509A9EB2-10C4-42BF-A1AA-09054EFA6D13}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.github\workflows\dotnet.yml = ..\..\.github\workflows\dotnet.yml
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NvParser", "NvParser", "{F97E774B-BD3B-4188-98CD-C47C6224C0D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinMAME.NvMaps", "..\..\pinmame-nvram-maps-dotnet\src\PinMAME.NvMaps\PinMAME.NvMaps.csproj", "{F893FCB8-407B-408D-B142-3B47F2BBA6A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Debug|x64.ActiveCfg = Debug|x64
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Debug|x64.Build.0 = Debug|x64
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Release|x64.ActiveCfg = Release|x64
+		{7ABAFF5A-E7EF-4BA8-9B02-62EF54184E31}.Release|x64.Build.0 = Release|x64
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Debug|x64.ActiveCfg = Debug|x64
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Debug|x64.Build.0 = Debug|x64
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Release|x64.ActiveCfg = Release|x64
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55}.Release|x64.Build.0 = Release|x64
+		{421F17A5-FA50-412F-9499-609567DCD769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421F17A5-FA50-412F-9499-609567DCD769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421F17A5-FA50-412F-9499-609567DCD769}.Debug|x64.ActiveCfg = Debug|x64
+		{421F17A5-FA50-412F-9499-609567DCD769}.Debug|x64.Build.0 = Debug|x64
+		{421F17A5-FA50-412F-9499-609567DCD769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421F17A5-FA50-412F-9499-609567DCD769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421F17A5-FA50-412F-9499-609567DCD769}.Release|x64.ActiveCfg = Release|x64
+		{421F17A5-FA50-412F-9499-609567DCD769}.Release|x64.Build.0 = Release|x64
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Debug|x64.Build.0 = Debug|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|x64.ActiveCfg = Release|Any CPU
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D0EF184-B1F2-4474-9E00-00E47F189C55} = {694C29C5-C269-4339-8E06-002A52091133}
+		{F893FCB8-407B-408D-B142-3B47F2BBA6A8} = {F97E774B-BD3B-4188-98CD-C47C6224C0D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CEDA065-B14D-49A4-B23F-106E32FFC63B}
+	EndGlobalSection
+EndGlobal

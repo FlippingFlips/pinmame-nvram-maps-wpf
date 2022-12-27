@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="PinMAME.NvMaps.Win.Module.Views.HighScores"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:prism="http://prismlibrary.com/"             
+             mc:Ignorable="d"             
+             prism:ViewModelLocator.AutoWireViewModel="True" d:Height="500">
+
+    <GroupBox Header="Search: High Scores" 
+              Margin="3"
+              VerticalAlignment="Stretch">
+        <Grid VerticalAlignment="Stretch">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="60" MaxHeight="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox MaxHeight="14" VerticalAlignment="Top" Margin="3"
+                         mah:TextBoxHelper.Watermark="_char_map ???????????ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+                         Text="{Binding CharMap}" ToolTip="Used for rare games, see Whirlwind"/>
+
+                <Button Grid.Column="1" Content="Find Scores" VerticalAlignment="Top"
+                        Margin="3" ToolTip="{StaticResource FindScoresToolTip}"
+                    HorizontalAlignment="Right"
+                    Command="{Binding FindHighScoresCommand}" 
+                    Style="{DynamicResource MahApps.Styles.Button.Square.Accent}"/>
+            </Grid>
+
+            <DataGrid Grid.Row="0" Template="{StaticResource ScoreEntryDataGridTemplate}"/>
+        </Grid>
+    </GroupBox>
+</UserControl>

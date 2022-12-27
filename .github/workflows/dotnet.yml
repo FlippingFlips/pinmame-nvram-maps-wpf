@@ -1,0 +1,55 @@
+name: .Net 472
+
+on:
+  push:
+    branches: [ main ] # should just build the release when pull request is completed
+#  pull_request:
+#    branches: [ main ]
+
+jobs:
+  release:
+    name: Release
+    strategy:
+      matrix:
+        kind: ['windows']
+        include:
+          - kind: windows
+            os: windows-latest
+            target: win-x86
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v1
+      name: Checkout Code     
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
+     
+    - name: Restore NuGet Packages
+      run: nuget restore src/PinMAME.NvMaps.Win.sln
+ 
+    - name: Build
+      shell: bash
+      run: |
+        tag=$(git describe --tags --abbrev=0)
+        release_name="NvMaps-Helper-$tag-${{ matrix.target }}"
+
+        # msbuild
+        msbuild.exe src/PinMAME.NvMaps.Win.Shell/PinMAME.NvMaps.Win.Shell.csproj -p:Configuration=Release -p:DeployOnBuild=true -p:Platform=x86 -p:OutputPath="../../${release_name}/"
+        7z a -tzip "${release_name}.zip" "./${release_name}/*.exe"
+        7z a -tzip "${release_name}.zip" "./${release_name}/*.md"
+        7z a -tzip "${release_name}.zip" "./${release_name}/ripleys/"
+        7z a -tzip "${release_name}.zip" "./${release_name}/drac_l1/"
+        
+        # Only need this for multiple platform
+        # rm -r "$release_name"
+
+    - name: Publish
+      uses: softprops/action-gh-release@v1
+      with:
+          tag_name: "0.96"
+          files: "NvMaps-Helper*"
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

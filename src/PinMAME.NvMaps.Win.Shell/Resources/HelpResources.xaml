@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="NvRamHelp">Drag an .nv file here to load it.</sys:String>
+    <sys:String x:Key="AuthorHelp">Fill in your details for the exported mapping.</sys:String>
+    <sys:String x:Key="LastScoresHelp">Play a 4 player game, a single ball for each player should be enough and make a note of the scores.
+        You may also need to prefix the score with zeros. You will get an idea of what the length should be from the high score table.</sys:String>
+    <sys:String x:Key="HighScoresHelp">Make a note of top scores. Load game in pinmame and use 'P' to pause then jot down the scores and initials. Some games have a Grand Champion and 4 more scores where most just have 4. The labels are for the output to display. Grand Champion / GC</sys:String>
+    <sys:String x:Key="FindScoresToolTip">Runs a score search. Will reset any of your selections. Once you are finished and save map you won't need to run this search.</sys:String>
+    <sys:String x:Key="PreviewOutputToolTop">Preview the mapped output with labels."</sys:String>
+    <sys:String x:Key="SaveMappinToolTop">Save the json and the NV to directory under rom name. This also saves the app state (romname.mapsave) so when you drag in the rom again your saved values are still available.</sys:String>
+
+    <!--META-->
+    <sys:String x:Key="_romsHelp">A CSV (comma separated) list of PinMAME ROMs that use this map.</sys:String>
+    <sys:String x:Key="_fileFormatHelp">Currently 0.1.</sys:String>
+    <sys:String x:Key="_versionHelp">A float indicating the JSON file's version</sys:String>
+    <sys:String x:Key="_copyrightHelp">Original author of the file, possibly a list of people who have contributed to the file.</sys:String>
+    <sys:String x:Key="_licenseHelp">All files from Toms project are covered by the LGPL license. Modified map files, or maps created using an existing map as a starting point are also covered by that license.</sys:String>
+    <sys:String x:Key="_notesHelp">(CSV) Notes about the file, possibly indicating who created it or portions of the file that may not be entirely correct.</sys:String>
+    <sys:String x:Key="_endianHelp">Big or little</sys:String>
+    
+    <!--ADJUSTMENT / AUDIT-->
+    <sys:String x:Key="Values">A list of strings used for the enum encoding, starting at index 0. Also used for the bits encoding, as values for bit 0, 1, 2, etc.</sys:String>
+    <sys:String x:Key="Units">Used to indicate that a field contains a time value as either a number of "seconds" or "minutes", and should be displayed as HH:MM:SS</sys:String>
+    <sys:String x:Key="SpecialValues">Must be written comma separated, key / value like, 0,OFF,1,ON, this will be outputted to {"0":"OFF","1":"ON"}</sys:String>
+
+    <sys:String x:Key="RowCount">Amount of rows to add to this menu prefixed keys like 01, 02, 03</sys:String>
+    <sys:String x:Key="RowStartOffset">Memory Offset to start on. Example: 7025 will add 7027, 7029</sys:String>
+    <sys:String x:Key="RowMemoryOffset">The length of the offsets. Audits menu is usually 3 where adjustments are 1 or 2</sys:String>
+    <sys:String x:Key="CreateMenu">Generates a new menu to work on.</sys:String>
+
+    <!--TABLES-->
+    <sys:String x:Key="MaskValues">Add a mask value. Try 127. See Grand Lizard for initials</sys:String>
+    <sys:String x:Key="InitialOffsets">Select position of Initials offset results</sys:String>
+    <sys:String x:Key="ScoreOffsets">Select position of Score offset results</sys:String>
+    <sys:String x:Key="ScoreEntry">Enter the score. If the length you need is 5 and you have less than 10 numbers then prefix it with zeros to make 10 chars</sys:String>
+    <sys:String x:Key="InitialsLength">Enter length of the initials, some games (Stern) are longer than 3 chars (default).</sys:String>
+
+    <!--COMBOBOX-->
+    <sys:String x:Key="EncodingComboAdjustments">Select the encoding type</sys:String>
+</ResourceDictionary>

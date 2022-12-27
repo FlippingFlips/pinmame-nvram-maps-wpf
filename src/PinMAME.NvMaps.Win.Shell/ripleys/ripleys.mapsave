@@ -1,0 +1,28 @@
+{
+  "NvRamFile": {
+    "FileName": "M:\\Pinball\\Apps\\VPinMAME34_beta\\nvram\\ripleys.nv",
+    "FileSize": 8238,
+    "FileNoExt": "ripleys"
+  },
+  "Notes": "Compiled by Dave HorsePin",
+  "Copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "Version": 0.1,
+  "FileFormat": 0.1,
+  "License": "GNU Lesser General Public License v3.0",
+  "Endian": "big",
+  "Roms": "ripleys",
+  "RamSize": 0,
+  "LastScores": [
+    {"Score":{"ScoreEntry":"00281080","SelectedResult":{"Offset":5719,"Length":4,"SearchVal":"00281080"},"SearchResults":[{"Offset":5719,"Length":4,"SearchVal":"00281080"}],"SearchInitalsResults":null,"SelectedInitialsResult":null},"Packed":true,"Encoding":"bcd","Label":null,"ShortLabel":null,"Initials":null},
+    {"Score":{"ScoreEntry":"02209030","SelectedResult":{"Offset":5724,"Length":4,"SearchVal":"02209030"},"SearchResults":[{"Offset":5724,"Length":4,"SearchVal":"02209030"}],"SearchInitalsResults":null,"SelectedInitialsResult":null},"Packed":true,"Encoding":"bcd","Label":null,"ShortLabel":null,"Initials":null},
+    {"Score":{"ScoreEntry":"00420190","SelectedResult":{"Offset":5729,"Length":4,"SearchVal":"00420190"},"SearchResults":[{"Offset":5729,"Length":4,"SearchVal":"00420190"}],"SearchInitalsResults":null,"SelectedInitialsResult":null},"Packed":true,"Encoding":"bcd","Label":null,"ShortLabel":null,"Initials":null},
+    {"Score":{"ScoreEntry":"01544960","SelectedResult":{"Offset":5734,"Length":4,"SearchVal":"01544960"},"SearchResults":[{"Offset":5734,"Length":4,"SearchVal":"01544960"}],"SearchInitalsResults":null,"SelectedInitialsResult":null},"Packed":true,"Encoding":"bcd","Label":null,"ShortLabel":null,"Initials":null}
+  ],
+  "HighScores": [
+    {"Score":{"ScoreEntry":"50000000","SelectedResult":{"Offset":7714,"Length":4,"SearchVal":"50000000"},"SearchResults":[{"Offset":24,"Length":4,"SearchVal":"50000000"},{"Offset":910,"Length":4,"SearchVal":"50000000"},{"Offset":1000,"Length":4,"SearchVal":"50000000"},{"Offset":1578,"Length":4,"SearchVal":"50000000"},{"Offset":4693,"Length":4,"SearchVal":"50000000"},{"Offset":5283,"Length":4,"SearchVal":"50000000"},{"Offset":5291,"Length":4,"SearchVal":"50000000"},{"Offset":5319,"Length":4,"SearchVal":"50000000"},{"Offset":5323,"Length":4,"SearchVal":"50000000"},{"Offset":5327,"Length":4,"SearchVal":"50000000"},{"Offset":5363,"Length":4,"SearchVal":"50000000"},{"Offset":5597,"Length":4,"SearchVal":"50000000"},{"Offset":5607,"Length":4,"SearchVal":"50000000"},{"Offset":6070,"Length":4,"SearchVal":"50000000"},{"Offset":6505,"Length":4,"SearchVal":"50000000"},{"Offset":7714,"Length":4,"SearchVal":"50000000"},{"Offset":7724,"Length":4,"SearchVal":"50000000"}],"SearchInitalsResults":[{"Offset":5661,"Length":3,"SearchVal":"PML"}],"SelectedInitialsResult":{"Offset":5661,"Length":3,"SearchVal":"PML"}},"Packed":true,"Encoding":"bcd","Label":"Grand Champion","ShortLabel":"GC","Initials":"PML"},
+    {"Score":{"ScoreEntry":"31000000","SelectedResult":{"Offset":7719,"Length":4,"SearchVal":"31000000"},"SearchResults":[{"Offset":5602,"Length":4,"SearchVal":"31000000"},{"Offset":7719,"Length":4,"SearchVal":"31000000"}],"SearchInitalsResults":[{"Offset":5671,"Length":3,"SearchVal":"LNK"}],"SelectedInitialsResult":{"Offset":5671,"Length":3,"SearchVal":"LNK"}},"Packed":true,"Encoding":"bcd","Label":"1st","ShortLabel":"#1","Initials":"LNK"},
+    {"Score":{"ScoreEntry":"25000000","SelectedResult":{"Offset":7724,"Length":4,"SearchVal":"25000000"},"SearchResults":[{"Offset":5319,"Length":4,"SearchVal":"25000000"},{"Offset":5607,"Length":4,"SearchVal":"25000000"},{"Offset":7724,"Length":4,"SearchVal":"25000000"}],"SearchInitalsResults":[{"Offset":5681,"Length":3,"SearchVal":"JRK"}],"SelectedInitialsResult":{"Offset":5681,"Length":3,"SearchVal":"JRK"}},"Packed":true,"Encoding":"bcd","Label":"2nd","ShortLabel":"#2","Initials":"JRK"},
+    {"Score":{"ScoreEntry":"22000000","SelectedResult":{"Offset":7729,"Length":4,"SearchVal":"22000000"},"SearchResults":[{"Offset":5612,"Length":4,"SearchVal":"22000000"},{"Offset":7729,"Length":4,"SearchVal":"22000000"}],"SearchInitalsResults":[{"Offset":5691,"Length":3,"SearchVal":"J Y"}],"SelectedInitialsResult":{"Offset":5691,"Length":3,"SearchVal":"J Y"}},"Packed":true,"Encoding":"bcd","Label":"3rd","ShortLabel":"#3","Initials":"J Y"},
+    {"Score":{"ScoreEntry":"18000000","SelectedResult":{"Offset":7734,"Length":4,"SearchVal":"18000000"},"SearchResults":[{"Offset":5617,"Length":4,"SearchVal":"18000000"},{"Offset":7734,"Length":4,"SearchVal":"18000000"}],"SearchInitalsResults":[{"Offset":5701,"Length":3,"SearchVal":"C G"}],"SelectedInitialsResult":{"Offset":5701,"Length":3,"SearchVal":"C G"}},"Packed":true,"Encoding":"bcd","Label":"4th","ShortLabel":"#4","Initials":"C G"}
+  ]
+}

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="PinMAME.NvMaps.Win.Shell.Help.LastScoresHelp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PinMAME.NvMaps.Win.Shell.Help"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Margin="50">
+    <Grid>
+        <StackPanel>
+            <TextBlock>                               
+                    <TextBlock Text="LAST SCORES" Foreground="YellowGreen"/>
+                    <LineBreak/>
+                    <TextBlock Text="1. Load game in VP or Pinmame play a 4 player single ball. You can pause when player 1 is ready on ball 2"/>                        
+                    <LineBreak/>
+                    <TextBlock Text="2. Add the scores into the latest scores table"/>
+                    <LineBreak/>
+                    <TextBlock Text="3. Save this app state by clicking Save Map"/>
+                    <LineBreak/>
+                    <TextBlock Text="4. Redrop the NV file which has your latest ball scores in"/>
+                    <LineBreak/>
+                    <TextBlock Text="6. Run search to find your offsets. Note: You may want to prefix with zeros if your scores are low"/>
+                    <LineBreak/>
+                    <TextBlock Text="7. Save the app state so you don't have to type these in again"/>         
+                    <LineBreak/>
+                    <LineBreak/>                            
+                    </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>
