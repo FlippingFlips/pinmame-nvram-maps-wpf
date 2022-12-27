@@ -20,6 +20,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       name: Checkout Code     
+      
+    - uses: actions/checkout@v3
+      with:
+          submodules: true  # 
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod      
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.1
@@ -35,7 +40,7 @@ jobs:
       run: |
         tag=$(git describe --tags --abbrev=0)
         release_name="NvMaps-Helper-$tag-${{ matrix.target }}"
-        git submodule foreach git pull origin main
+        # git submodule foreach git pull origin main
         # msbuild
         msbuild.exe src/PinMAME.NvMaps.Win.Shell/PinMAME.NvMaps.Win.Shell.csproj -p:Configuration=Release -p:DeployOnBuild=true -p:Platform=x86 -p:OutputPath="../../${release_name}/"
         7z a -tzip "${release_name}.zip" "./${release_name}/*.exe"
